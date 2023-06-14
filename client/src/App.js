@@ -1,18 +1,15 @@
 import './App.css';
+import Header from './components/header/Header';
+import HomePage from './pages/homePage/HomePage';
 
 function App() {
   return (
-    <div className="dev-background">
-      <h1>
-        <span className='dev-span'>
-          Job Board
-        </span> "за IT общността"
-      </h1>
-      <form className='dev-search-form'>
-        <input  className='dev-search-input' type='search'/>
-        <input className='dev-submit-btn' type='submit'/>
-      </form>
-    </div>
+  <>
+  <Header></Header>
+  <HomePage></HomePage>
+
+  </>
+    
   );
 }
 

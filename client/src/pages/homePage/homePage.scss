@@ -1,0 +1,446 @@
+@font-face {
+    font-family: 'DEVMedium';
+    src: url(../../fonts/Axiforma-Medium.woff);
+}
+
+@font-face {
+    font-family: 'DEVNormal';
+    src: url(../../fonts/Axiforma-Light.woff);
+}
+
+.dev-background {
+    height: 500px;
+    background-image: url(./homepage-header-background.svg);
+    background-size: 1980px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dev-span {
+    color: #374ffe;
+    font-family: DEVMedium;
+}
+
+.dev-background>h1 {
+    font-family: DEVMedium;
+    color: #595959;
+    font-weight: 700;
+    font-size: 68px;
+    text-align: center;
+}
+
+.dev-search-form {
+    position: relative;
+    max-width: 614px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dev-search-input {
+    width: 100%;
+    border: none;
+    line-height: 48px;
+    padding: 2px 57px 0 20px;
+    border-radius: 5px;
+}
+
+.dev-submit-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 50px;
+    background-image: url(../../icon-search-blue.svg);
+    background-size: 56%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+.dev-serach-box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.dev-ring-slider {
+    position: absolute;
+    top: 170px;
+    left: calc(50% - 77px);
+    padding: 20px;
+    width: 136px;
+    height: 136px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #304ffe;
+    transition: all .2s ease-in-out;
+    z-index: 1;
+    cursor: pointer;
+
+    a {
+        font-family: DEVMedium;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &:hover {
+        width: 144px;
+        height: 144px;
+        padding: 24px;
+        left: calc(50% - 81px);
+        bottom: calc(0px - 44px);
+        box-shadow: 0px 3px 50px #00000029;
+        transform: scale(1.1);
+
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        transform: rotate(45deg);
+        margin: 7px auto 0;
+    }
+}
+
+.dev-category-container {
+    position: relative;
+    bottom: 40px;
+
+    .dev-inner-container {
+        padding-top: 122px;
+
+
+    }
+
+    div {
+        width: 90%;
+        max-width: 1585px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .dev-container {
+        width: 90%;
+        max-width: 1300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .dev-category-subcontainer {
+        column-count: 3;
+        column-gap: 0;
+    }
+
+    .category-block {
+        padding: 30px 15px;
+        position: relative;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        display: flex;
+        flex-flow: wrap;
+        overflow: hidden;
+    }
+
+    .dev-jobs-numbers {
+        font-size: 22px;
+        padding-top: 5px;
+        position: absolute;
+        z-index: 0;
+        top: 5px;
+        right: -58px;
+        left: auto;
+        width: 50px;
+        text-align: center;
+    }
+
+    .dev-catergory-name {
+        font-size: 22px;
+        font-family: DEVMedium;
+        color: #272222;
+        font-weight: 600;
+        width: 50%;
+        max-width: 152px;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+    }
+
+    .dev-child-term {
+        color: #272222;
+        align-items: center;
+        display: inline-flex;
+        padding: 0 20px 0 20px;
+        width: max-content;
+        height: 58px;
+        background: #F7F8FB;
+        border-radius: 4px;
+        flex-grow: 0;
+        margin: 8px 8px 8px 0;
+        font-family: DEVNormal;
+
+        .child-number {
+            color: #0926CB;
+            margin-left: 5px;
+            font-family: DEVNormal;
+        }
+
+        .icon-java {
+            background-position: -224px -202px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 65px;
+            width: 38px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+
+        .icon-dotnet {
+            background-position: -322px -202px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 65px;
+            width: 38px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+
+        .icon-php {
+            background-position: -6px -298px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 65px;
+            width: 38px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+
+        .icon-C {
+            background-position: -117px -298px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 65px;
+            width: 38px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+
+        .icon-python {
+            background-position: -220px -298px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 65px;
+            width: 38px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+
+        .icon-ruby {
+            background-position: -324px -298px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 65px;
+            width: 38px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+
+        .icon-go {
+            background-position: -9px -407px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 65px;
+            width: 38px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+
+        .icon-node {
+            background-position: -116px -403px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 65px;
+            width: 38px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+        .icon-devops {
+            background-position: -309px -486px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 66px;
+            width: 52px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+        .icon-database {
+            background-position: -113px -484px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 66px;
+            width: 52px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+        .icon-cybersecurity{
+            background-position: -3px -578px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 66px;
+            width: 52px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+        .icon-SysAdmin{
+            background-position: -211px -646px;
+            background-size: 356px;
+            background-image: url(../../logo-icons-sprite-5.svg);
+            background-repeat: no-repeat;
+            height: 66px;
+            width: 52px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+
+        }
+    }
+}
+
+.backend-category::before{
+    background: #CED4F5;
+}
+.infrastructure::before{
+    background: #FAD4A9;
+}
+
+.dev-catergory-name:before {
+    content: "";
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    bottom: 9px;
+    z-index: -1;
+}
+.backend-numbers::after{
+    background: #CED4F5;
+}
+.infrastructure-numbers::after{
+    background: #FAD4A9;
+
+}
+.dev-jobs-numbers:after {
+    content: '';
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
